@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import styles from "./search.module.css";
 
 export default function Search({ foodData, setFoodData }) {
   const [search, updateSearch] = useState("pizza");
@@ -18,8 +19,10 @@ export default function Search({ foodData, setFoodData }) {
   return (
     <div>
       <input
+        className={styles.searchBar}
         type="text"
         value={search}
+        placeholder="   Search..."
         onChange={(e) => {
           updateSearch(e.target.value);
         }}
