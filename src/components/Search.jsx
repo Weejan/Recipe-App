@@ -5,12 +5,15 @@ export default function Search({ foodData, setFoodData }) {
   const [search, updateSearch] = useState("pizza");
   const URL = "https://api.spoonacular.com/recipes/complexSearch";
   const API_KEY = "4c376e6ff7f742dda647c23d18a5fa88";
+  // `${URL}?query=${search}&apiKey=${API_KEY}`
 
   useEffect(() => {
     async function fetchAPI() {
-      const res = await fetch(`${URL}?query=${search}&apiKey=${API_KEY}`);
+      const res = await fetch(
+        "https://api.spoonacular.com/recipes/complexSearch?query=pasta&maxFat=25&number=2"
+      );
       const data = await res.json();
-      console.log(data.results);
+      console.log(data);
       setFoodData(data.results);
     }
     fetchAPI();
