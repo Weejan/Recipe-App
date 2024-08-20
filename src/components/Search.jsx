@@ -10,11 +10,10 @@ export default function Search({ foodData, setFoodData }) {
   useEffect(() => {
     async function fetchAPI() {
       const res = await fetch(
-        "https://api.spoonacular.com/recipes/complexSearch?query=pasta&maxFat=25&number=2"
+        `https://api.edamam.com/api/recipes/v2?type=public&q=${search}&app_id=5c0d7e75&app_key=4d34432d1791dd64ede8e87dec23b59a`
       );
       const data = await res.json();
-      console.log(data);
-      setFoodData(data.results);
+      setFoodData(data.hits);
     }
     fetchAPI();
   }, [search]);
