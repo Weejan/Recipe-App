@@ -5,9 +5,33 @@
   overflow: hidden;
   margin: 20px;
   font-family: Inter, sans-serif;
+  padding: 20px;
 }
 
 .foodImg {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+}
+
+.foodName {
+  font-weight: 700;
+}
+
+.foodContent {
+  text-align: center;
+  font-weight: 700;
+}
+
+.itemButton {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1fa08a;
+  font-weight: bold;
+  color: antiquewhite;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
 }
