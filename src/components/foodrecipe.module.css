@@ -1,0 +1,41 @@
+.recipeCard {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  min-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
+  align-items: center;
+  border-radius: 8px;
+}
+
+.foodName {
+  display: flex;
+  justify-content: center;
+}
+
+.basicInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.servings {
+  margin: 20px;
+  justify-content: flex-start;
+}
+
+.instructions {
+  padding: 5px;
+  border-radius: 6px;
+}
+.instructions h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.instructions ol {
+  color: rgb(80, 76, 76);
+}

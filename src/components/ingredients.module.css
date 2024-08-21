@@ -1,0 +1,28 @@
+.itemContainer {
+  display: flex;
+  padding: 10px;
+  margin-top: 50px;
+  box-shadow: 0 0 10 rgb(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.imgContainer {
+  width: 100px;
+  height: 100px;
+  border-radius: 9px;
+}
+
+.imgContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.details {
+  margin-left: 50px;
+}
+
+.details h3 {
+  font-size: larger;
+  font-weight: bold;
+}

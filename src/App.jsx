@@ -10,16 +10,26 @@ import InnerContainer from "./components/InnerContainer";
 
 function App() {
   const [foodData, setFoodData] = useState([]);
-  const [foodId, setFoodId] = useState("");
+  const [foodId, setFoodId] = useState("680975");
+  const [apiLoading, setApiLoading] = useState(true);
   return (
     <>
-      <NavBar foodData={foodData} setFoodData={setFoodData} />
+      <NavBar
+        foodData={foodData}
+        setFoodData={setFoodData}
+        setApiLoading={setApiLoading}
+      />
       <Container>
         <InnerContainer>
-          <FoodList foodData={foodData} setFoodData={setFoodData} />
+          <FoodList
+            foodData={foodData}
+            setFoodData={setFoodData}
+            setFoodId={setFoodId}
+            apiLoading={apiLoading}
+          />
         </InnerContainer>
         <InnerContainer>
-          <FoodRecipe />
+          <FoodRecipe foodId={foodId} />
         </InnerContainer>
       </Container>
     </>

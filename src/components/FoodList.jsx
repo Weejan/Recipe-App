@@ -1,11 +1,20 @@
 import FoodItem from "./FoodItem";
 
-export default function FoodList({ foodData, setFoodData }) {
+export default function FoodList({
+  foodData,
+  setFoodData,
+  setFoodId,
+  apiLoading,
+}) {
   return (
     <div>
-      {foodData.map((food) => (
-        <FoodItem key={food.recipe.label} food={food} />
-      ))}
+      {apiLoading ? (
+        <h1>Loading...</h1>
+      ) : (
+        foodData.map((food) => (
+          <FoodItem key={food.id} food={food} setFoodId={setFoodId} />
+        ))
+      )}
     </div>
   );
 }
