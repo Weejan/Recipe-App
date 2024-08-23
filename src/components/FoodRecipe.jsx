@@ -24,7 +24,7 @@ export default function FoodRecipe({ foodId }) {
     <div className={styles.recipeCard}>
       <div>
         <h1 className={styles.foodName}>{food.title}</h1>
-        <img src={food.image} alt={food.title} />
+        <img className={styles.foodImg} src={food.image} alt={food.title} />
       </div>
       <div className={styles.basicInfo}>
         <span>
@@ -39,7 +39,12 @@ export default function FoodRecipe({ foodId }) {
       </div>
       <div className={styles.servings}>
         <span>
-          <strong>Price per serving: ${food.pricePerServing / 100}</strong>
+          <strong>
+            Price per serving:{" "}
+            <span className={styles.price}>
+              ${(food.pricePerServing / 100).toFixed(2)}
+            </span>
+          </strong>
         </span>
       </div>
 

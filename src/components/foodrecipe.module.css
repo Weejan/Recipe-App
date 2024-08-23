@@ -1,26 +1,49 @@
+@media (max-width: 768px) {
+  .basicInfo {
+    font-size: 0.3em;
+  }
+  .foodName {
+    font-size: 1em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  .servings {
+    font-size: 0.7em;
+  }
+  .instructions ol {
+    font-size: 0.8em;
+  }
+}
+
 .recipeCard {
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
-  max-width: 900px;
-  min-width: 600px;
+  max-width: 40vmax;
   margin: 20px auto;
   padding: 20px;
   box-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
   align-items: center;
   border-radius: 8px;
+  overflow: hidden;
 }
-
+.foodImg {
+  width: 100%;
+  height: auto;
+}
 .foodName {
   display: flex;
   justify-content: center;
 }
 
 .basicInfo {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 .servings {
   margin: 20px;
@@ -41,4 +64,9 @@
 }
 
 .ingredients {
+  width: 100%;
+}
+
+.price {
+  color: rgb(189, 5, 5);
 }

@@ -1,5 +1,5 @@
 import FoodItem from "./FoodItem";
-
+import styles from "./foodlist.module.css";
 export default function FoodList({
   foodData,
   setFoodData,
@@ -7,7 +7,7 @@ export default function FoodList({
   apiLoading,
 }) {
   return (
-    <div>
+    <div className={styles.listContainer}>
       {apiLoading ? (
         <h1>Loading...</h1>
       ) : (

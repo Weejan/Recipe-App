@@ -1,5 +1,12 @@
+@media (max-width: 425px) {
+  .foodContainer {
+    min-width: 12em;
+    height: auto;
+  }
+}
+
 .foodContainer {
-  width: 300px;
+  width: 15em;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   overflow: hidden;

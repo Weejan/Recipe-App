@@ -9,11 +9,11 @@ export default function Ingredients({ item }) {
       </div>
       <div className={styles.details}>
         <h3>
-          name:{item.nameClean}
+          name: {item.nameClean}
           <br></br>
         </h3>
         <h3>
-          amount:{item.amount} {item.unit}
+          amount: {item.amount} {item.unit}
         </h3>
       </div>
     </div>
